@@ -33,7 +33,7 @@ nav {
 }
 
 .contenido {
-    background-color: lightcoral;
+    background-color: rgb(33, 147, 103);
     color: aliceblue;
     padding: 20px;
     grid-area: contenido;
@@ -41,7 +41,7 @@ nav {
 }
 
 .sidebar {
-    background-color: lightseagreen;
+    background-color: rgb(147, 210, 108);
     color: aliceblue;
     padding: 20px;
     grid-area: sidebar;
@@ -67,7 +67,7 @@ nav {
 }
 
 #bloque1 {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(219, 187, 239);
     grid-area: bloque1;
 
 }
@@ -78,7 +78,7 @@ nav {
 }
 
 footer {
-    background-color: rgb(204, 222, 239);
+    background-color: rgb(194, 232, 189);
     grid-area: footer;
     padding: 20px;
     border-radius: 10px;
@@ -94,6 +94,34 @@ footer p {
     
 }
 
+#cambiar-color {
+    background-color: #ace2c4;
+    color: rgb(14, 98, 39);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+  
+  #cambia-color:hover {
+    background-color: #58c18b;
+  }
+
+.button-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
     .contenedor {
         margin: 20px;
@@ -105,4 +133,35 @@ footer p {
             "bloque2 bloque2 bloque2"
             "footer footer footer";
     }
+
+    .button-toggle {
+        display: block;
+    
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #695b95;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        right: 0;
+        left: 0;
+      }
+    
+      .menu a {
+        display: block;
+        padding: 10px;
+        color: white;
+      }
+
+      .menu.open {
+        display: flex;
+      }
 }
